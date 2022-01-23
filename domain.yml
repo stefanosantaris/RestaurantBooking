@@ -45,12 +45,11 @@ responses:
             How reserves the table?
   utter_confirm_reservation:
         - text: Thank you very much for your reservation. Your reservation is finished.
-        # - image: https://cdn4.iconfinder.com/data/icons/hotel-159/512/online-reservation-booking-completed-512.png
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 actions:
-- '...'
+- action_open_map
 - utter_greet
 - utter_check_date
 - utter_check_persons

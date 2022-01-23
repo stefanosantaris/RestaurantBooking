@@ -14,4 +14,4 @@ stories:
    - active_loop: reservation_name_form
    - intent: inform_name
    - action: utter_confirm_reservation
-   - action: utter_cheer_up
+   - action: action_open_map
