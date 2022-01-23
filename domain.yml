@@ -1,0 +1,68 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- book
+- inform_day
+- inform_name
+- inform_persons
+  
+slots:
+  num_persons:
+    type: text
+    influence_conversation: false
+    mappings: []
+  date:
+    type: text
+    influence_conversation: false
+    mappings: []
+  name:
+    type: text
+    influence_conversation: false
+    mappings: []
+responses:
+  utter_greet:
+       - text: |
+           Hello! How can I help you?
+       - text: |
+           Hi!
+  utter_check_date:
+        - text: |
+            Of course. Which date?
+        - text: |
+            Absolutely. When would you like to come? 
+  utter_check_persons:
+        - text: |
+            And how many people?
+        - text: |
+            For how many people?
+  utter_request_name:
+        - text: |
+            Under which name will the reservation be?
+        - text: |
+            How reserves the table?
+  utter_confirm_reservation:
+        - text: Thank you very much for your reservation. Your reservation is finished.
+        # - image: https://cdn4.iconfinder.com/data/icons/hotel-159/512/online-reservation-booking-completed-512.png
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+actions:
+- '...'
+- utter_greet
+- utter_check_date
+- utter_check_persons
+- utter_request_name
+- utter_confirm_reservation
+forms:
+  date_check_form:
+    required_slots:
+    - date
+  table_check_form:
+    required_slots:
+    - num_persons
+  reservation_name_form:
+    required_slots:
+    - name

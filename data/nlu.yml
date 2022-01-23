@@ -1,0 +1,33 @@
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey!
+    - Hallo
+    - Good day
+    - Good morning
+
+- intent: book
+  examples: |
+    - I want to book a table
+    - I want a reservation
+    - Can you book me a table?
+    - Can you make a reservation?
+
+- intent: inform_day
+  examples: |
+    - Tomorrow at 15:00
+    - Tomorrow
+    - Next week at 18:00
+    - In two hours
+
+- intent: inform_persons
+  examples: |
+    - Four
+    - 4
+
+- intent: inform_name
+  examples: |
+    - Stefanos Antaris
+    - George Papadopoulos
+

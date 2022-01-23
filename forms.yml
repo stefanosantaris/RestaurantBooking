@@ -1,0 +1,35 @@
+slots:
+  date:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: date_check_form
+        requested_slot: date
+  name:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: reservation_name_form
+        requested_slot: name
+  num_persons:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: table_check_form
+        requested_slot: num_persons
+
+forms:
+  date_check_form:
+    required_slots:
+    - date
+  
+  table_check_form:
+    required_slots:
+    - num_persons
+
+  reservation_name_form:
+    required_slots:
+    - name

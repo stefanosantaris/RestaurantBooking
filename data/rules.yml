@@ -1,0 +1,27 @@
+rules:
+ - rule: book form day
+   steps:
+   - intent: book
+   - action: utter_check_date
+   - active_loop: date_check_form
+
+ - rule: book form persons
+   steps:
+   - intent: inform_day
+   - action: utter_check_persons
+   - active_loop: table_check_form
+
+
+ - rule: book form name
+   steps:
+   - intent: inform_persons
+   - action: utter_request_name
+   - active_loop: reservation_name_form
+
+
+
+  
+
+
+  
+

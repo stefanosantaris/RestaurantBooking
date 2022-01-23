@@ -1,0 +1,24 @@
+responses:
+   utter_greet:
+       - text: |
+           Hello! How can I help you?
+       - text: |
+           Hi!
+   utter_check_date:
+        - text: |
+            Of course. Which date?
+        - text: |
+            Absolutely. When would you like to come? 
+   utter_check_persons:
+        - text: |
+            And how many people?
+        - text: |
+            For how many people?
+   utter_request_name:
+        - text: |
+            Under which name will the reservation be?
+        - text: |
+            Who reserves the table?
+   utter_confirm_reservation:
+        - text: Thank you very much for your reservation. Your reservation is finished.
+        
